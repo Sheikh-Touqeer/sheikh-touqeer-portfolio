@@ -1,0 +1,1653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sheikh Touqeer | Computer Science Student at FAST-NUCES</title>
+
+  <meta name="description"
+        content="Portfolio of Sheikh Touqeer, BS Computer Science student at FAST-NUCES Peshawar. Explore programming, web development and digital logic projects.">
+
+  <meta name="author" content="Sheikh Touqeer">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="Sheikh Touqeer | Portfolio">
+  <meta property="og:description"
+        content="BS Computer Science Student at FAST-NUCES Peshawar.">
+  <meta property="og:type" content="website">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    :root {
+      --navy: #071b33;
+      --navy2: #0b2949;
+      --navy3: #12395f;
+      --blue: #2563eb;
+      --blue2: #3b82f6;
+      --lightblue: #eaf2ff;
+      --white: #ffffff;
+      --background: #f7f9fc;
+      --text: #1e293b;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --green: #059669;
+    }
+
+    body {
+      font-family: Inter, -apple-system, BlinkMacSystemFont,
+                   "Segoe UI", Arial, sans-serif;
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    .container {
+      width: min(1120px, 90%);
+      margin: auto;
+    }
+
+    /* NAVIGATION */
+
+    nav {
+      height: 72px;
+      background: rgba(255,255,255,.97);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 850;
+      letter-spacing: -1px;
+      color: var(--navy);
+    }
+
+    .logo span {
+      color: var(--blue);
+    }
+
+    .navlinks {
+      display: flex;
+      gap: 27px;
+      align-items: center;
+    }
+
+    .navlinks a {
+      color: #475569;
+      font-size: 13px;
+      font-weight: 650;
+      transition: .2s;
+    }
+
+    .navlinks a:hover {
+      color: var(--blue);
+    }
+
+    .nav-cv {
+      padding: 9px 15px;
+      color: white !important;
+      background: var(--navy);
+      border-radius: 6px;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 650px;
+      display: flex;
+      align-items: center;
+      color: white;
+
+      background:
+        radial-gradient(circle at 84% 25%,
+        rgba(48,116,181,.3), transparent 25%),
+        linear-gradient(135deg, #06172b, #0a2948 65%, #0d3155);
+    }
+
+    .hero-content {
+      max-width: 840px;
+      padding: 90px 0;
+    }
+
+    .available {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #c6dcf4;
+      background: rgba(255,255,255,.055);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 30px;
+      padding: 7px 13px;
+      font-size: 12px;
+      font-weight: 650;
+      margin-bottom: 21px;
+    }
+
+    .available-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #34d399;
+    }
+
+    .hero h1 {
+      font-size: clamp(48px, 7vw, 72px);
+      line-height: 1;
+      letter-spacing: -3px;
+      margin-bottom: 19px;
+    }
+
+    .hero h2 {
+      font-size: clamp(20px, 3vw, 27px);
+      color: #c9d8e8;
+      font-weight: 500;
+      margin-bottom: 19px;
+    }
+
+    .hero p {
+      max-width: 720px;
+      color: #aebfd1;
+      font-size: 16px;
+      line-height: 1.8;
+      margin-bottom: 31px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 7px;
+      border: 1px solid transparent;
+      border-radius: 6px;
+      padding: 11px 19px;
+      font-size: 13px;
+      font-weight: 750;
+      cursor: pointer;
+      transition: .2s;
+    }
+
+    .primary {
+      color: white;
+      background: var(--blue);
+    }
+
+    .primary:hover {
+      background: #1d4ed8;
+      transform: translateY(-2px);
+    }
+
+    .outline {
+      color: white;
+      background: transparent;
+      border-color: #55718d;
+    }
+
+    .outline:hover {
+      background: rgba(255,255,255,.07);
+    }
+
+    /* GENERAL SECTIONS */
+
+    section {
+      padding: 90px 0;
+    }
+
+    .section-small {
+      color: var(--blue);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 850;
+      margin-bottom: 8px;
+    }
+
+    .section-title {
+      color: var(--navy);
+      font-size: clamp(29px, 4vw, 38px);
+      letter-spacing: -1.2px;
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+
+    .section-desc {
+      color: var(--muted);
+      max-width: 690px;
+      margin-bottom: 40px;
+    }
+
+    /* ABOUT */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.5fr .8fr;
+      gap: 55px;
+      align-items: start;
+    }
+
+    .about-copy p {
+      color: #475569;
+      margin-bottom: 16px;
+    }
+
+    .info-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px 26px;
+      box-shadow: 0 12px 35px rgba(15,23,42,.045);
+    }
+
+    .info-item {
+      padding: 15px 0;
+      border-bottom: 1px solid #edf1f5;
+    }
+
+    .info-item:last-child {
+      border: 0;
+    }
+
+    .info-item small {
+      display: block;
+      color: #94a3b8;
+      font-size: 9px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 3px;
+    }
+
+    .info-item strong {
+      color: var(--navy);
+      font-size: 13px;
+    }
+
+    /* EDUCATION */
+
+    .education-section {
+      background: white;
+    }
+
+    .timeline {
+      max-width: 860px;
+      border-left: 2px solid #dbe7f5;
+      margin-left: 7px;
+    }
+
+    .edu {
+      position: relative;
+      padding: 0 0 35px 31px;
+    }
+
+    .edu:last-child {
+      padding-bottom: 0;
+    }
+
+    .edu::before {
+      content: "";
+      position: absolute;
+      left: -7px;
+      top: 5px;
+      width: 12px;
+      height: 12px;
+      background: var(--blue);
+      border: 3px solid white;
+      box-shadow: 0 0 0 2px #c8dbf6;
+      border-radius: 50%;
+    }
+
+    .edu h3 {
+      color: var(--navy);
+      font-size: 18px;
+    }
+
+    .edu .institution {
+      color: var(--blue);
+      font-size: 14px;
+      font-weight: 700;
+      margin: 3px 0;
+    }
+
+    .edu p {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* SKILLS */
+
+    .skill-categories {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .skill-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      padding: 25px;
+      box-shadow: 0 7px 25px rgba(15,23,42,.035);
+      transition: .25s;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-4px);
+      border-color: #b5caed;
+    }
+
+    .skill-card h3 {
+      color: var(--navy);
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+
+    .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tag {
+      color: #294765;
+      background: #eef4fb;
+      border: 1px solid #dbe7f5;
+      border-radius: 5px;
+      padding: 6px 10px;
+      font-size: 12px;
+      font-weight: 650;
+    }
+
+    /* PROJECTS */
+
+    .project-section {
+      background: white;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .project {
+      display: flex;
+      flex-direction: column;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: .25s;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 18px 45px rgba(15,23,42,.08);
+    }
+
+    .project-visual {
+      height: 190px;
+      background: linear-gradient(135deg, #0b2847, #174d7e);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .project-number {
+      font-size: 65px;
+      font-weight: 850;
+      opacity: .11;
+      position: absolute;
+      right: 18px;
+      bottom: -8px;
+    }
+
+    .code-visual {
+      font-family: Consolas, monospace;
+      text-align: left;
+      font-size: 13px;
+      color: #bdd9f6;
+      line-height: 1.8;
+      padding: 30px;
+      width: 100%;
+    }
+
+    .code-visual b {
+      color: #70a9ff;
+    }
+
+    .grid-game {
+      width: 115px;
+      height: 115px;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      border: 2px solid #8fb6d8;
+    }
+
+    .grid-game span {
+      border: 1px solid #8fb6d8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #d8eafa;
+      font-size: 20px;
+      font-weight: 800;
+    }
+
+    .hardware-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .project-body {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      padding: 24px;
+    }
+
+    .project-type {
+      color: var(--blue);
+      font-size: 9px;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      font-weight: 850;
+      margin-bottom: 7px;
+    }
+
+    .project h3 {
+      color: var(--navy);
+      font-size: 18px;
+      line-height: 1.3;
+      margin-bottom: 9px;
+    }
+
+    .project p {
+      color: #64748b;
+      font-size: 13px;
+      margin-bottom: 16px;
+    }
+
+    .features {
+      padding-left: 17px;
+      color: #4b5d70;
+      font-size: 12px;
+      margin-bottom: 18px;
+    }
+
+    .features li {
+      margin-bottom: 5px;
+    }
+
+    .project-tech {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: auto;
+    }
+
+    .tech {
+      padding: 4px 8px;
+      border-radius: 4px;
+      background: var(--lightblue);
+      color: #28508b;
+      font-size: 10px;
+      font-weight: 750;
+    }
+
+    /* CONTACT */
+
+    .contact-section {
+      background: var(--background);
+    }
+
+    .contact-box {
+      background:
+        linear-gradient(135deg, var(--navy), #0c3155);
+      border-radius: 12px;
+      padding: 55px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 35px;
+      align-items: center;
+      color: white;
+    }
+
+    .contact-box h2 {
+      font-size: 31px;
+      letter-spacing: -1px;
+      margin-bottom: 8px;
+    }
+
+    .contact-box p {
+      color: #b9c9da;
+      max-width: 550px;
+    }
+
+    .contact-actions {
+      display: flex;
+      gap: 9px;
+      flex-wrap: wrap;
+    }
+
+    .contact-actions a {
+      color: white;
+      border: 1px solid #4a6884;
+      border-radius: 5px;
+      padding: 9px 13px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .contact-actions a:hover {
+      background: #173c60;
+    }
+
+    /* CV */
+
+    .cv-modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(3,12,24,.88);
+      z-index: 3000;
+      overflow-y: auto;
+      display: none;
+      padding: 30px 12px;
+    }
+
+    .cv-modal.open {
+      display: block;
+    }
+
+    .cv-buttons {
+      max-width: 850px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 8px;
+      margin: 0 auto 10px;
+    }
+
+    .cv-buttons button {
+      border: 0;
+      border-radius: 5px;
+      padding: 9px 14px;
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    .cv-download {
+      color: white;
+      background: var(--blue);
+    }
+
+    .cv-close {
+      background: white;
+      color: var(--navy);
+    }
+
+    .cv {
+      width: min(850px, 100%);
+      min-height: 1080px;
+      margin: auto;
+      background: white;
+      padding: 48px 55px;
+      box-shadow: 0 20px 60px rgba(0,0,0,.3);
+    }
+
+    .cv-head {
+      border-bottom: 3px solid var(--navy);
+      padding-bottom: 17px;
+      margin-bottom: 20px;
+    }
+
+    .cv-head h1 {
+      color: var(--navy);
+      font-size: 34px;
+      letter-spacing: -1px;
+    }
+
+    .cv-head h2 {
+      color: #506176;
+      font-size: 14px;
+      font-weight: 600;
+      margin: 2px 0 8px;
+    }
+
+    .cv-contact {
+      color: #64748b;
+      font-size: 10.5px;
+      line-height: 1.7;
+    }
+
+    .cv-part {
+      margin-top: 20px;
+    }
+
+    .cv-part h3 {
+      color: var(--navy);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #dbe3ed;
+      margin-bottom: 8px;
+    }
+
+    .cv-part p,
+    .cv-part li {
+      color: #445468;
+      font-size: 11.5px;
+      line-height: 1.55;
+    }
+
+    .cv-part ul {
+      padding-left: 17px;
+    }
+
+    .cv-entry {
+      margin-bottom: 10px;
+    }
+
+    .cv-entry strong {
+      color: #162b42;
+    }
+
+    footer {
+      padding: 25px;
+      text-align: center;
+      color: #718096;
+      background: white;
+      border-top: 1px solid var(--border);
+      font-size: 11px;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 900px) {
+      .project-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .skill-categories {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .contact-box {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .navlinks a {
+        display: none;
+      }
+
+      .navlinks .nav-cv {
+        display: inline-block;
+      }
+
+      .hero {
+        min-height: auto;
+      }
+
+      .hero-content {
+        padding: 75px 0;
+      }
+
+      .about-grid,
+      .project-grid,
+      .skill-categories {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+
+      .contact-box {
+        padding: 35px 25px;
+      }
+
+      .cv {
+        padding: 30px 23px;
+      }
+    }
+
+    /* PRINT CV ONLY */
+
+    @media print {
+      @page {
+        size: A4;
+        margin: 0;
+      }
+
+      body * {
+        visibility: hidden;
+      }
+
+      #cvModal,
+      #cvModal * {
+        visibility: visible;
+      }
+
+      #cvModal {
+        display: block !important;
+        position: absolute;
+        inset: 0;
+        background: white;
+        padding: 0;
+      }
+
+      .cv-buttons {
+        display: none;
+      }
+
+      .cv {
+        box-shadow: none;
+        width: 100%;
+        min-height: auto;
+        padding: 14mm 16mm;
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+
+<nav>
+  <div class="container navbar">
+
+    <a href="#home" class="logo">
+      Sheikh<span>.</span>
+    </a>
+
+    <div class="navlinks">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+
+      <a href="javascript:void(0)"
+         class="nav-cv"
+         onclick="openCV()">
+         Resume
+      </a>
+    </div>
+
+  </div>
+</nav>
+
+
+<header class="hero" id="home">
+
+  <div class="container hero-content">
+
+    <div class="available">
+      <span class="available-dot"></span>
+      Open to learning & professional opportunities
+    </div>
+
+    <h1>Sheikh Touqeer</h1>
+
+    <h2>
+      Computer Science Student at FAST-NUCES
+    </h2>
+
+    <p>
+      BS Computer Science undergraduate at FAST-NUCES Peshawar
+      with hands-on academic experience in C programming,
+      problem solving, file handling, interactive console applications,
+      digital logic and foundational web development.
+    </p>
+
+    <div class="hero-buttons">
+
+      <a href="#projects"
+         class="btn primary">
+         View My Work
+      </a>
+
+      <a href="https://github.com/Sheikh-Touqeer"
+         target="_blank"
+         rel="noopener"
+         class="btn outline">
+         GitHub
+      </a>
+
+      <button class="btn outline"
+              onclick="openCV()">
+         View Resume
+      </button>
+
+    </div>
+
+  </div>
+</header>
+
+
+<main>
+
+<section id="about">
+  <div class="container">
+
+    <div class="section-small">About</div>
+
+    <h2 class="section-title">
+      Learning computer science by building.
+    </h2>
+
+    <div class="about-grid">
+
+      <div class="about-copy">
+
+        <p>
+          I am Sheikh Touqeer, a BS Computer Science student at
+          FAST National University of Computer and Emerging Sciences,
+          Peshawar Campus. I am currently in my 3rd semester and
+          expect to graduate in 2029.
+        </p>
+
+        <p>
+          My academic work has given me practical exposure to
+          programming in C and C++, file-based applications,
+          console game logic and digital logic hardware.
+          I have also developed foundational front-end skills
+          using HTML and CSS.
+        </p>
+
+        <p>
+          I am focused on improving my programming,
+          problem-solving and software development abilities
+          through coursework, practice and practical projects.
+        </p>
+
+      </div>
+
+
+      <div class="info-card">
+
+        <div class="info-item">
+          <small>Degree</small>
+          <strong>BS Computer Science</strong>
+        </div>
+
+        <div class="info-item">
+          <small>University</small>
+          <strong>FAST-NUCES</strong>
+        </div>
+
+        <div class="info-item">
+          <small>Campus</small>
+          <strong>Peshawar</strong>
+        </div>
+
+        <div class="info-item">
+          <small>Semester</small>
+          <strong>3rd Semester</strong>
+        </div>
+
+        <div class="info-item">
+          <small>Expected Graduation</small>
+          <strong>2029</strong>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="education"
+         class="education-section">
+
+  <div class="container">
+
+    <div class="section-small">Education</div>
+
+    <h2 class="section-title">
+      Academic Background
+    </h2>
+
+    <p class="section-desc">
+      My educational journey from school to undergraduate
+      Computer Science studies.
+    </p>
+
+
+    <div class="timeline">
+
+      <div class="edu">
+        <h3>
+          Bachelor of Science in Computer Science
+        </h3>
+
+        <div class="institution">
+          FAST National University of Computer and Emerging Sciences
+        </div>
+
+        <p>
+          Peshawar Campus · Currently in 3rd Semester ·
+          Expected Graduation 2029
+        </p>
+      </div>
+
+
+      <div class="edu">
+        <h3>
+          Higher Secondary Education (FSc)
+        </h3>
+
+        <div class="institution">
+          D.J. Sindh Government Science College
+        </div>
+
+        <p>
+          First Year: 81% · Second Year: 75%
+        </p>
+      </div>
+
+
+      <div class="edu">
+        <h3>
+          Secondary School Education (Matriculation)
+        </h3>
+
+        <div class="institution">
+          The Citizens Foundation (TCF)
+        </div>
+
+        <p>
+          78.4% · Grade A
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section id="skills">
+
+  <div class="container">
+
+    <div class="section-small">Skills</div>
+
+    <h2 class="section-title">
+      Technical Toolkit
+    </h2>
+
+    <p class="section-desc">
+      Technologies and productivity tools I currently use
+      in my academic and personal work.
+    </p>
+
+
+    <div class="skill-categories">
+
+      <div class="skill-card">
+
+        <h3>Programming</h3>
+
+        <div class="skill-list">
+          <span class="tag">C</span>
+          <span class="tag">C++</span>
+          <span class="tag">Problem Solving</span>
+          <span class="tag">File Handling</span>
+        </div>
+
+      </div>
+
+
+      <div class="skill-card">
+
+        <h3>Web Development</h3>
+
+        <div class="skill-list">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+        </div>
+
+      </div>
+
+
+      <div class="skill-card">
+
+        <h3>Productivity Tools</h3>
+
+        <div class="skill-list">
+          <span class="tag">Microsoft Word</span>
+          <span class="tag">Microsoft Excel</span>
+          <span class="tag">Microsoft PowerPoint</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section id="projects"
+         class="project-section">
+
+  <div class="container">
+
+    <div class="section-small">Selected Work</div>
+
+    <h2 class="section-title">
+      Academic Projects
+    </h2>
+
+    <p class="section-desc">
+      Selected projects completed as part of my Computer Science
+      and Digital Logic coursework.
+    </p>
+
+
+    <div class="project-grid">
+
+      <!-- PROJECT 1 -->
+
+      <article class="project">
+
+        <div class="project-visual">
+
+          <div class="code-visual">
+            <b>&gt;</b> MCQ TEST SYSTEM<br>
+            <b>&gt;</b> Select difficulty<br>
+            <b>&gt;</b> Load questions<br>
+            <b>&gt;</b> Timer: 6 seconds
+          </div>
+
+          <span class="project-number">01</span>
+
+        </div>
+
+
+        <div class="project-body">
+
+          <div class="project-type">
+            C Programming Project
+          </div>
+
+          <h3>
+            MCQ-Based Test Management System
+          </h3>
+
+          <p>
+            A console-based assessment application developed
+            in C with question management, difficulty selection,
+            timed attempts and performance tracking.
+          </p>
+
+
+          <ul class="features">
+
+            <li>
+              Allows users to solve MCQs, add questions
+              or exit the system.
+            </li>
+
+            <li>
+              Supports Easy, Normal and Hard
+              difficulty selection.
+            </li>
+
+            <li>
+              Lets users choose the number of
+              questions to attempt.
+            </li>
+
+            <li>
+              Reads stored questions from a file
+              and displays four answer choices.
+            </li>
+
+            <li>
+              Provides immediate correct/incorrect feedback.
+            </li>
+
+            <li>
+              Uses a 6-second time limit for each question
+              and handles time expiration.
+            </li>
+
+            <li>
+              Generates a final result showing
+              correct and incorrect answers.
+            </li>
+
+            <li>
+              Includes user history for reviewing
+              previous activity/results.
+            </li>
+
+          </ul>
+
+
+          <div class="project-tech">
+
+            <span class="tech">C</span>
+            <span class="tech">File Handling</span>
+            <span class="tech">Console Application</span>
+            <span class="tech">Program Logic</span>
+
+          </div>
+
+        </div>
+      </article>
+
+
+      <!-- PROJECT 2 -->
+
+      <article class="project">
+
+        <div class="project-visual">
+
+          <div class="grid-game">
+            <span>1</span>
+            <span>0</span>
+            <span>1</span>
+
+            <span>0</span>
+            <span>1</span>
+            <span>0</span>
+
+            <span>1</span>
+            <span></span>
+            <span>0</span>
+          </div>
+
+          <span class="project-number">02</span>
+
+        </div>
+
+
+        <div class="project-body">
+
+          <div class="project-type">
+            Programming Lab Project
+          </div>
+
+          <h3>
+            3×3 Grid Strategy Game
+          </h3>
+
+          <p>
+            A console-based two-player grid game developed
+            as a programming lab exercise using a 3×3 board
+            and 0/1 player inputs.
+          </p>
+
+
+          <ul class="features">
+
+            <li>
+              Implements a 3×3 interactive game board.
+            </li>
+
+            <li>
+              Accepts player moves using 0 and 1.
+            </li>
+
+            <li>
+              Evaluates horizontal, vertical
+              and diagonal winning patterns.
+            </li>
+
+            <li>
+              Uses conditional logic and
+              board-state evaluation.
+            </li>
+
+          </ul>
+
+
+          <div class="project-tech">
+
+            <span class="tech">C</span>
+            <span class="tech">2D Grid</span>
+            <span class="tech">Game Logic</span>
+            <span class="tech">Conditions</span>
+
+          </div>
+
+        </div>
+      </article>
+
+
+      <!-- PROJECT 3 -->
+
+      <article class="project">
+
+        <div class="project-visual">
+
+          <img src="digital-clock.jpg"
+               class="hardware-image"
+               alt="Physical digital clock project built on breadboards">
+
+        </div>
+
+
+        <div class="project-body">
+
+          <div class="project-type">
+            Digital Logic Design Project
+          </div>
+
+          <h3>
+            Physical Digital Clock
+          </h3>
+
+          <p>
+            A hardware-based digital clock constructed
+            physically on breadboards as part of the
+            Digital Logic Design course.
+          </p>
+
+
+          <ul class="features">
+
+            <li>
+              Built as a physical digital logic circuit.
+            </li>
+
+            <li>
+              Uses multi-digit seven-segment displays
+              for time visualization.
+            </li>
+
+            <li>
+              Implemented through interconnected
+              breadboard circuitry.
+            </li>
+
+            <li>
+              Applied practical digital logic
+              and circuit integration concepts.
+            </li>
+
+          </ul>
+
+
+          <div class="project-tech">
+
+            <span class="tech">Digital Logic</span>
+            <span class="tech">Breadboard</span>
+            <span class="tech">7-Segment Display</span>
+            <span class="tech">Hardware</span>
+
+          </div>
+
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="contact"
+         class="contact-section">
+
+  <div class="container">
+
+    <div class="contact-box">
+
+      <div>
+        <h2>
+          Let's connect.
+        </h2>
+
+        <p>
+          I am open to opportunities where I can learn,
+          contribute and strengthen my practical
+          Computer Science skills.
+        </p>
+      </div>
+
+
+      <div class="contact-actions">
+
+        <a href="mailto:sheikhtouqeer73@gmail.com">
+          Email
+        </a>
+
+        <a href="tel:+923702127139">
+          0370-2127139
+        </a>
+
+        <a href="https://www.linkedin.com/in/sheikh-touqeer-5a721b299"
+           target="_blank"
+           rel="noopener">
+          LinkedIn
+        </a>
+
+        <a href="https://github.com/Sheikh-Touqeer"
+           target="_blank"
+           rel="noopener">
+          GitHub
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+
+<footer>
+  © <span id="year"></span>
+  Sheikh Touqeer · Computer Science Student · FAST-NUCES
+</footer>
+
+
+
+<!-- RESUME / CV -->
+
+<div class="cv-modal"
+     id="cvModal">
+
+  <div class="cv-buttons">
+
+    <button class="cv-download"
+            onclick="window.print()">
+      Save as PDF
+    </button>
+
+    <button class="cv-close"
+            onclick="closeCV()">
+      Close
+    </button>
+
+  </div>
+
+
+  <div class="cv">
+
+    <div class="cv-head">
+
+      <h1>
+        Sheikh Touqeer
+      </h1>
+
+      <h2>
+        BS Computer Science Student | FAST-NUCES
+      </h2>
+
+      <div class="cv-contact">
+
+        Peshawar, Pakistan ·
+        0370-2127139 ·
+        sheikhtouqeer73@gmail.com
+        <br>
+
+        linkedin.com/in/sheikh-touqeer-5a721b299 ·
+        github.com/Sheikh-Touqeer
+
+      </div>
+
+    </div>
+
+
+    <div class="cv-part">
+
+      <h3>Professional Summary</h3>
+
+      <p>
+        BS Computer Science undergraduate at FAST-NUCES,
+        Peshawar with foundational experience in C, C++,
+        HTML and CSS. Hands-on academic experience includes
+        developing a file-based timed MCQ assessment system,
+        a console grid game and a physical digital clock
+        project. Interested in opportunities to strengthen
+        programming, problem-solving and software development
+        skills in a professional environment.
+      </p>
+
+    </div>
+
+
+    <div class="cv-part">
+
+      <h3>Education</h3>
+
+      <div class="cv-entry">
+        <p>
+          <strong>
+            BS Computer Science — FAST-NUCES,
+            Peshawar Campus
+          </strong>
+          <br>
+          3rd Semester · Expected Graduation: 2029
+        </p>
+      </div>
+
+
+      <div class="cv-entry">
+        <p>
+          <strong>
+            FSc — D.J. Sindh Government Science College
+          </strong>
+          <br>
+          First Year: 81% · Second Year: 75%
+        </p>
+      </div>
+
+
+      <div class="cv-entry">
+        <p>
+          <strong>
+            Matriculation — The Citizens Foundation (TCF)
+          </strong>
+          <br>
+          78.4% · Grade A
+        </p>
+      </div>
+
+    </div>
+
+
+    <div class="cv-part">
+
+      <h3>Technical Skills</h3>
+
+      <p>
+        <strong>Programming:</strong>
+        C, C++
+        <br>
+
+        <strong>Web:</strong>
+        HTML, CSS
+        <br>
+
+        <strong>Concepts:</strong>
+        File Handling, Programming Logic,
+        Problem Solving, Digital Logic
+        <br>
+
+        <strong>Productivity:</strong>
+        Microsoft Word, Excel, PowerPoint
+      </p>
+
+    </div>
+
+
+    <div class="cv-part">
+
+      <h3>Academic Projects</h3>
+
+
+      <div class="cv-entry">
+
+        <p>
+          <strong>
+            MCQ-Based Test Management System — C
+          </strong>
+        </p>
+
+        <ul>
+          <li>
+            Developed a file-based console assessment
+            system supporting question solving and addition.
+          </li>
+
+          <li>
+            Implemented Easy, Normal and Hard difficulty
+            levels and configurable question counts.
+          </li>
+
+          <li>
+            Added four-option questions,
+            immediate answer feedback and a
+            six-second per-question time limit.
+          </li>
+
+          <li>
+            Implemented final score reporting
+            and user history functionality.
+          </li>
+        </ul>
+
+      </div>
+
+
+      <div class="cv-entry">
+
+        <p>
+          <strong>
+            3×3 Grid Strategy Game — Programming Lab
+          </strong>
+        </p>
+
+        <ul>
+          <li>
+            Built a console-based 3×3 two-player game
+            using 0/1 input and board-state logic.
+          </li>
+
+          <li>
+            Implemented horizontal, vertical and
+            diagonal win-condition evaluation.
+          </li>
+        </ul>
+
+      </div>
+
+
+      <div class="cv-entry">
+
+        <p>
+          <strong>
+            Physical Digital Clock — Digital Logic Design
+          </strong>
+        </p>
+
+        <ul>
+          <li>
+            Constructed a physical digital clock
+            using breadboard-based digital circuitry.
+          </li>
+
+          <li>
+            Integrated multi-digit seven-segment
+            displays for visual output.
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+
+<script>
+
+  document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+
+  function openCV() {
+
+    document
+      .getElementById("cvModal")
+      .classList.add("open");
+
+    document.body.style.overflow = "hidden";
+  }
+
+
+  function closeCV() {
+
+    document
+      .getElementById("cvModal")
+      .classList.remove("open");
+
+    document.body.style.overflow = "";
+  }
+
+
+  document
+    .getElementById("cvModal")
+    .addEventListener("click", function(event) {
+
+      if (event.target === this) {
+        closeCV();
+      }
+
+    });
+
+
+  document.addEventListener("keydown", function(event) {
+
+    if (event.key === "Escape") {
+      closeCV();
+    }
+
+  });
+
+</script>
+
+</body>
+</html>
