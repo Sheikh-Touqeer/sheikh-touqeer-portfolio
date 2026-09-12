@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sheikh-touqeer.vercel.app/sitemap.xml
