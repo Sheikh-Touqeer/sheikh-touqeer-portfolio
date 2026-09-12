@@ -526,6 +526,28 @@
       font-size: 10px;
       font-weight: 750;
     }
+    .project-source-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 18px;
+  width: fit-content;
+  padding: 9px 14px;
+  border: 1px solid rgba(96, 165, 250, 0.35);
+  border-radius: 6px;
+  background: rgba(37, 99, 235, 0.12);
+  color: #bfdbfe;
+  font-size: 11px;
+  font-weight: 750;
+  transition: 0.2s;
+}
+
+.project-source-btn:hover {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
 
     /* CONTACT */
 
@@ -1408,48 +1430,41 @@ footer {
           </div>
 
           <h3>
-            3×3 Grid Strategy Game
+            Minesweeper Game in C
           </h3>
 
           <p>
-            A console-based two-player grid game developed
-            as a programming lab exercise using a 3×3 board
-            and 0/1 player inputs.
+           A console-based 4×4 Minesweeper game developed in C,
+           featuring mine detection, adjacent-mine counting,
+           persistent game history and player rankings.
           </p>
 
 
           <ul class="features">
+<li>Uses a 4×4 board with four configurable mine positions.</li>
+<li>Player 1 acts as the Mine Setter and Player 2 as the Explorer.</li>
+<li>Calculates the number of adjacent mines around safe cells.</li>
+<li>Stores game results using C file handling.</li>
+<li>Supports player-history search and Top 3 Explorer rankings.</li>
 
-            <li>
-              Implements a 3×3 interactive game board.
-            </li>
-
-            <li>
-              Accepts player moves using 0 and 1.
-            </li>
-
-            <li>
-              Evaluates horizontal, vertical
-              and diagonal winning patterns.
-            </li>
-
-            <li>
-              Uses conditional logic and
-              board-state evaluation.
-            </li>
 
           </ul>
 
 
           <div class="project-tech">
 
-            <span class="tech">C</span>
-            <span class="tech">2D Grid</span>
-            <span class="tech">Game Logic</span>
-            <span class="tech">Conditions</span>
+         <span class="tech">C</span>
+<span class="tech">2D Arrays</span>
+<span class="tech">File Handling</span>
+<span class="tech">Game Logic</span>
 
           </div>
-
+<a href="https://github.com/Sheikh-Touqeer/Minesweeper-Game-C"
+   target="_blank"
+   rel="noopener"
+   class="project-source-btn">
+  View Source on GitHub
+</a>
         </div>
       </article>
 
