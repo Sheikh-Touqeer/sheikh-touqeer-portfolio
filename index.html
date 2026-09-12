@@ -957,40 +957,109 @@ footer {
     display: none;
   }
 }
-    @media print {
-      @page {
-        size: A4;
-        margin: 0;
-      }
+ @media print {
 
-      body * {
-        visibility: hidden;
-      }
+  @page {
+    size: A4;
+    margin: 0;
+  }
 
-      #cvModal,
-      #cvModal * {
-        visibility: visible;
-      }
+  html,
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 210mm;
+    height: 297mm;
+    background: #ffffff !important;
+  }
 
-      #cvModal {
-        display: block !important;
-        position: absolute;
-        inset: 0;
-        background: white;
-        padding: 0;
-      }
+  body > nav,
+  body > header,
+  body > main,
+  body > footer {
+    display: none !important;
+  }
 
-      .cv-buttons {
-        display: none;
-      }
+  #cvModal {
+    display: block !important;
+    position: static !important;
+    width: 210mm !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    background: #ffffff !important;
+  }
 
-      .cv {
-        box-shadow: none;
-        width: 100%;
-        min-height: auto;
-        padding: 14mm 16mm;
-      }
-    }
+  .cv-buttons {
+    display: none !important;
+  }
+
+  .cv {
+    display: block !important;
+    width: 210mm !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 10mm 13mm !important;
+    box-shadow: none !important;
+    background: #ffffff !important;
+    color: #1f2937 !important;
+  }
+
+  .cv-head {
+    padding-bottom: 8px !important;
+    margin-bottom: 9px !important;
+  }
+
+  .cv-head h1 {
+    font-size: 25px !important;
+    line-height: 1.05 !important;
+    margin: 0 !important;
+  }
+
+  .cv-head h2 {
+    font-size: 11px !important;
+    margin: 2px 0 4px !important;
+  }
+
+  .cv-contact {
+    font-size: 8px !important;
+    line-height: 1.35 !important;
+  }
+
+  .cv-part {
+    margin-top: 9px !important;
+    break-inside: avoid;
+  }
+
+  .cv-part h3 {
+    font-size: 9px !important;
+    padding-bottom: 2px !important;
+    margin-bottom: 4px !important;
+  }
+
+  .cv-part p,
+  .cv-part li {
+    font-size: 8.4px !important;
+    line-height: 1.35 !important;
+  }
+
+  .cv-part ul {
+    margin: 3px 0 !important;
+    padding-left: 14px !important;
+  }
+
+  .cv-entry {
+    margin-bottom: 5px !important;
+    break-inside: avoid;
+  }
+
+  .cv a {
+    color: #1d4f91 !important;
+    text-decoration: none !important;
+  }
+}
   </style>
   <link rel="canonical" href="https://sheikh-touqeer.vercel.app/">
 
